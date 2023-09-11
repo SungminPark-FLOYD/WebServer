@@ -52,3 +52,5 @@ D:\WebServer\WebServer\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\BlazorApp.gen
 D:\WebServer\WebServer\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\BlazorApp.csproj.CopyComplete
 D:\WebServer\WebServer\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ShowUser.razor.g.cs
 D:\WebServer\WebServer\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\Razor\Pages\ShowUser.razor.g.cs
+D:\WebServer\WebServer\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\TableTemplate.razor.g.cs
+D:\WebServer\WebServer\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\Razor\Pages\TableTemplate.razor.g.cs
