@@ -75,6 +75,13 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "D:\WebServer\WebServer\BlazorApp\BlazorApp\Pages\ShowUser.razor"
+using BlazorApp.Data;
+
+#line default
+#line hidden
+#nullable disable
     public partial class ShowUser : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -82,6 +89,39 @@ using BlazorApp.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 20 "D:\WebServer\WebServer\BlazorApp\BlazorApp\Pages\ShowUser.razor"
+       
+	[CascadingParameter(Name = "ThemeColor")]
+	string _color { get; set; }
+	[Parameter]
+	public List<UserData> Users { get; set; }
+
+	[Parameter]
+	public EventCallback CallbackTest { get; set; }
+
+	protected override void OnInitialized()
+	{
+		Users.Add(new UserData() { Name = "Floyd" });
+		Users.Add(new UserData() { Name = "Faker" });
+		Users.Add(new UserData() { Name = "Deft" });
+	}
+
+	public void AddUser(UserData user)
+	{
+		Users.Add(user);		
+	}
+
+	public void KickUser(UserData user)
+	{
+		Users.Remove(user);
+
+		CallbackTest.InvokeAsync(null);
+	}
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
