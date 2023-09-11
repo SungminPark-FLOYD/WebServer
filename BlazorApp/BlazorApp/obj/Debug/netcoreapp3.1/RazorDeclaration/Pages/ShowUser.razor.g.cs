@@ -75,44 +75,13 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 3 "D:\WebServer\WebServer\BlazorApp\BlazorApp\Pages\Counter.razor"
-using System.Threading;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ShowUser : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 12 "D:\WebServer\WebServer\BlazorApp\BlazorApp\Pages\Counter.razor"
-       
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-
-    void AutoIncrement() {
-        var timer = new Timer(x => {
-            InvokeAsync(() =>
-            {
-                IncrementCount();
-                StateHasChanged();
-            });
-        }, null, 1000, 1000);
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591
