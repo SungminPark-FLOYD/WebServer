@@ -90,6 +90,22 @@ using BlazorApp.Data;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 27 "D:\WebServer\WebServer\BlazorApp\BlazorApp\Pages\Index.razor"
+       
+
+	protected override void OnInitialized()
+	{
+
+	}
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ScopedService scoped { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private TransientService transient { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private SingletonService singletion { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private PaymentService paymentService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFoodService foodService { get; set; }
     }
 }
