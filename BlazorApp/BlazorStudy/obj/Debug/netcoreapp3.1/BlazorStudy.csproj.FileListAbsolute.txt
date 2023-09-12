@@ -50,3 +50,5 @@ D:\WebServer\WebServer\BlazorApp\BlazorStudy\obj\Debug\netcoreapp3.1\BlazorStudy
 D:\WebServer\WebServer\BlazorApp\BlazorStudy\obj\Debug\netcoreapp3.1\BlazorStudy.pdb
 D:\WebServer\WebServer\BlazorApp\BlazorStudy\obj\Debug\netcoreapp3.1\BlazorStudy.genruntimeconfig.cache
 D:\WebServer\WebServer\BlazorApp\BlazorStudy\obj\Debug\netcoreapp3.1\BlazorStudy.csproj.CopyComplete
+D:\WebServer\WebServer\BlazorApp\BlazorStudy\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\JSInterop.razor.g.cs
+D:\WebServer\WebServer\BlazorApp\BlazorStudy\obj\Debug\netcoreapp3.1\Razor\Pages\JSInterop.razor.g.cs

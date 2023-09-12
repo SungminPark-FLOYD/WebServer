@@ -75,54 +75,13 @@ using BlazorStudy.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 3 "D:\WebServer\WebServer\BlazorApp\BlazorStudy\Pages\FetchData.razor"
-using BlazorStudy.Data;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
-    public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class JSInterrop : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 74 "D:\WebServer\WebServer\BlazorApp\BlazorStudy\Pages\FetchData.razor"
-       
-    private List<WeatherForecast> _forecasts;
-
-    bool _showPopup = false;
-    WeatherForecast _addForecast;
-
-    protected override async Task OnInitializedAsync()
-    {
-        _forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
-    }
-
-    void AddNewForecast() 
-    {
-        _showPopup = true;
-        _addForecast = new WeatherForecast();
-    }
-
-    void SaveForecast() {
-        _showPopup = false;
-        _addForecast.Date = DateTime.Now;
-        _forecasts.Add(_addForecast);
-    }
-
-    void ClosePopup() {
-        _showPopup = false;
-    }
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WeatherForecastService ForecastService { get; set; }
     }
 }
 #pragma warning restore 1591
