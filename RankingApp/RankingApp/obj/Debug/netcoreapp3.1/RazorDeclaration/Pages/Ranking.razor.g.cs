@@ -75,6 +75,21 @@ using RankingApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "D:\WebServer\WebServer\RankingApp\RankingApp\Pages\Ranking.razor"
+using RankingApp.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "D:\WebServer\WebServer\RankingApp\RankingApp\Pages\Ranking.razor"
+using RankingApp.Data.Services;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/ranking")]
     public partial class Ranking : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -82,6 +97,19 @@ using RankingApp.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 35 "D:\WebServer\WebServer\RankingApp\RankingApp\Pages\Ranking.razor"
+       
+	List<GameResult> _gameResults;
+
+	protected override async Task OnInitializedAsync() {
+		_gameResults = await RankingService.GetGameResultsAsync();
+	}
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private RankingService RankingService { get; set; }
     }
 }
 #pragma warning restore 1591
