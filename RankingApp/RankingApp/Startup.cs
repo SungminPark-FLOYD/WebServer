@@ -42,7 +42,10 @@ namespace RankingApp
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddSingleton<WeatherForecastService>();
 
-            services.AddScoped<RankingService>();
+            services.AddHttpClient<RankingService>(c =>
+            {
+                c.BaseAddress = new Uri("http://localhost:44343");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
