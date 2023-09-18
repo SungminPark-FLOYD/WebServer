@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingApp", "RankingApp\RankingApp.csproj", "{B5479163-00F4-472D-A368-52B020DB9A4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{BFA8D68A-2924-4589-B333-999C27AF6F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedData", "SharedData\SharedData.csproj", "{41409F13-358C-4D39-B769-C71648BFE7D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B5479163-00F4-472D-A368-52B020DB9A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5479163-00F4-472D-A368-52B020DB9A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5479163-00F4-472D-A368-52B020DB9A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA8D68A-2924-4589-B333-999C27AF6F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA8D68A-2924-4589-B333-999C27AF6F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA8D68A-2924-4589-B333-999C27AF6F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA8D68A-2924-4589-B333-999C27AF6F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41409F13-358C-4D39-B769-C71648BFE7D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41409F13-358C-4D39-B769-C71648BFE7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41409F13-358C-4D39-B769-C71648BFE7D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41409F13-358C-4D39-B769-C71648BFE7D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

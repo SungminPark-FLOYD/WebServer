@@ -106,3 +106,5 @@ D:\WebServer\WebServer\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.
 D:\WebServer\WebServer\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.dll
 D:\WebServer\WebServer\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.pdb
 D:\WebServer\WebServer\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.genruntimeconfig.cache
+D:\WebServer\WebServer\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Ranking.razor.g.cs
+D:\WebServer\WebServer\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\Pages\Ranking.razor.g.cs

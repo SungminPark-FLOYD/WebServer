@@ -98,13 +98,48 @@ using RankingApp.Data.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 35 "D:\WebServer\WebServer\RankingApp\RankingApp\Pages\Ranking.razor"
+#line 81 "D:\WebServer\WebServer\RankingApp\RankingApp\Pages\Ranking.razor"
        
-	List<GameResult> _gameResults;
+    List<GameResult> _gameResults;
 
-	protected override async Task OnInitializedAsync() {
-		_gameResults = await RankingService.GetGameResultsAsync();
-	}
+    bool _showPopup;
+    GameResult _gameResult;
+
+    protected override async Task OnInitializedAsync() {
+        _gameResults = await RankingService.GetGameResultsAsync();
+    }
+
+    void AddGameResult() {
+        _showPopup = true;
+        _gameResult = new GameResult() { id = 0 };
+    }
+
+    void ClosePopup() {
+        _showPopup = false;
+    }
+
+    void UpdateGameResult(GameResult gameResult) {
+        _showPopup = true;
+        _gameResult = gameResult;
+    }
+
+    async Task DeleteGameResult(GameResult gameResult) {
+        var result = RankingService.DeleteGameResult(gameResult);
+        _gameResults = await RankingService.GetGameResultsAsync();
+    }
+
+    async Task SaveGameResult() {
+        if(_gameResult.id == 0){
+            _gameResult.Date = DateTime.Now;
+            var result = RankingService.AddGameResult(_gameResult);
+        }
+        else {
+            var result = RankingService.UpdateGameResult(_gameResult);
+        }
+
+        _showPopup = false;
+        _gameResults = await RankingService.GetGameResultsAsync();
+    }
 
 #line default
 #line hidden
